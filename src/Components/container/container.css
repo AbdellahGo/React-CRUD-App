@@ -1,0 +1,32 @@
+.booksInfoList {
+    margin-top: 40px ;
+}
+
+.booksInfoList .parent {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+
+.booksInfoList .parent>div {
+    background-color: #ccc;
+    padding: 20px;
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 40px;
+}
+
+h2.title {
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .booksInfoList .parent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booksInfoList .parent>div {
+        width: 90%;
+    }
+}

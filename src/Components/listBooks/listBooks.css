@@ -1,0 +1,81 @@
+.listBooks .list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.listBooks .list>div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    gap: 5%;
+    border-bottom: 1px solid #333;
+}
+
+
+.listBooks .list div.title {
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+
+.listBooks .list div.title i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.listBooks .list div.title h3 {
+    font-size: 25px;
+}
+
+.listBooks .list div.buttons {
+    width: 40%;
+    display: flex;
+    gap: 10px;
+}
+.listBooks .list div.buttons button {
+    width: calc((100% - 10px) / 2);
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+
+.listBooks .list div.buttons button:first-child {
+    background-color: #0d354f;
+    color: #eee;
+    
+}
+
+.listBooks .list div.buttons button:first-child:hover {
+    background-color: #104568;
+    box-shadow: 0px 0px 4px 1px #0d354f;
+}
+.listBooks .list div.buttons button:last-child {
+    background-color: #601914;
+    color: #eee;
+}
+
+.listBooks .list div.buttons button:last-child:disabled {
+    background-color: #60191478;
+    cursor: auto;
+}
+
+.listBooks .list div.buttons button:last-child:hover {
+    background-color: #6d120b;
+    box-shadow: 0px 0px 4px 1px #601914;
+}
+
